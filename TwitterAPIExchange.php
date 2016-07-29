@@ -311,7 +311,6 @@ class TwitterAPIExchange
         if (($error = curl_error($feed)) !== '')
         {
             curl_close($feed);
-
             throw new \Exception($error);
         }
 
